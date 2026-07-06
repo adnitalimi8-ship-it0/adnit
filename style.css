@@ -1,0 +1,131 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero section */
+.hero {
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(rgba(0, 31, 63, 0.6), rgba(0, 31, 63, 0.6)),
+                url("barcelona.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Button styling */
+.cta-button {
+    background-color: #ff4136; /* Bright red */
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff6655;
+}
+
+/* About section */
+.about {
+    background-color: white;
+    color: #333;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about h2 {
+    color: #001f3f; /* Dark navy blue to match hero */
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.about p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.step {
+    background-color: #f8f9fa; /* Very light gray */
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.step .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.step p {
+    font-size: 1.1rem;
+    color: #495057;
+    margin: 0;
+}
+
+/* Soft colors for each step */
+.step:nth-child(1) {
+    background-color: #e3f2fd; /* Light blue */
+    border-color: #bbdefb;
+}
+
+.step:nth-child(2) {
+    background-color: #fff8e1; /* Light yellow */
+    border-color: #ffecb3;
+}
+
+.step:nth-child(3) {
+    background-color: #ffebee; /* Light red */
+    border-color: #ffcdd2;
+}
